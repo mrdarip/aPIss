@@ -1,0 +1,18 @@
+services:
+  lamp:
+    image: mattrayner/lamp:latest-1804
+
+    container_name: lamp_container
+    volumes:
+      - ./app:/app
+      - ./sql/mysql:/docker-entrypoint-initdb.d
+    working_dir: /app
+    ports:
+      - "80:80"
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: mydatabase
+      MYSQL_USER: myuser
+      MYSQL_PASSWORD: mypassword
+    restart: always
