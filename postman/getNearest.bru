@@ -1,0 +1,17 @@
+meta {
+  name: getNearest
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://localhost/api/crud/getNearest.php?latitude=45&longitude=30&distance=900000
+  body: none
+  auth: none
+}
+
+params:query {
+  latitude: 45
+  longitude: 30
+  distance: 900000
+}

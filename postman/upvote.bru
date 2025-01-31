@@ -1,0 +1,17 @@
+meta {
+  name: upvote
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost/api/crud/upvote.php
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id":1
+  }
+}
