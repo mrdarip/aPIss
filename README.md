@@ -6,32 +6,32 @@ Spain is known by tourists for having bathrooms that you have to pay to use, but
 
 Endpoints:
 
-- GET /crud/getTop.php  
+- GET api/crud/getTop.php  
     Get the top 10 bathrooms with the highest score.
-- GET /crud/getWorse.php  
+- GET api/crud/getWorse.php  
     Get the 10 bathrooms with the lowest score.
-- GET /crud/getNearest.php
+- GET api/crud/getNearest.php
     Get the nearest bathroom to a given location.  
     Params:
     - latitude: float
     - longitude: float
     - distance: int
-- GET /crud/getById.php
+- GET api/crud/getById.php
     Get a bathroom by its id.
     Params:
     - id: int
-- POST /crud/create.php
+- POST api/crud/create.php
     Create a new bathroom.
     Params:
     - name: string
     - description: string
     - latitude: float
     - longitude: float
-- POST /crud/upvote.php
+- POST api/crud/upvote.php
     Upvote a bathroom.
     Params:
     - id: int
-- POST /crud/downvote.php
+- POST api/crud/downvote.php
     Downvote a bathroom.
     Params:
     - id: int
